@@ -242,12 +242,15 @@ header {
   .nav-links li {
     margin-bottom: 8rem;
   }
+  .burger{
+    z-index: 50;
+  }
   .burger .fa-bars {
     font-size: 2.2rem;
     color: white;
-    z-index: 50;
     display: block;
   }
+
 
   /* Other Sections */
   .hero-social-icons {
