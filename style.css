@@ -12,6 +12,7 @@ html {
   --description: 1.6rem;
   --primary-color: #14505c;
   --secondary-color: #0e373f;
+  --header-text: #11414B;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: var(--header2);
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--header-text);
 }
 h3 {
   font-family: "Raleway", sans-serif;
@@ -58,7 +59,7 @@ header {
   background: url(assets/img/home1.jpg);
   background-size: cover;
   background-position: center;
-  margin-bottom: 100rem;
+  margin-bottom: 10rem;
 }
 .navbar {
   width: 100%;
@@ -169,14 +170,219 @@ header {
   width: 16rem;
   height: 10.6rem;
 }
+/* ----------------------
+   Call to Action Section
+  ----------------------- */
+  .cta-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+  .cta-text{
+    flex: 1 1 35.85em;
+  }
+  .cta-text h2{
+    margin-bottom: 2rem;
+  }
+  .cta-text p{
+    margin-bottom: 5rem;
+  }
+  .cta-images{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.5rem;
+    flex: 1.5 1 35.85rem;
+  }
+  .img-container1{
+    overflow: hidden;
+  }
+  .img-container2{
+    overflow: hidden;
+  }
+  .cta-img1{
+    width: 21.4rem;
+    height: 32.1rem;
+    transition: 0.5s ease;
+  }
+  .cta-img1:hover{
+    transform: scale(110%);
+  }
+  .cta-img2{
+    width: 26.9rem;
+    height: 40.4rem;
+    transition: 0.5s ease;
+  }
+  .cta-img2:hover{
+    transform: scale(110%);
+  }
+  /* --------------------
+     Discover Section
+  --------------------- */
+  .discover-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .discover-heading{
+    margin-bottom: 6rem;
+  }
+  .discover-img-container{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .discover-img img {
+    width: 21.6rem;
+    transition: 0.5s ease;
+  }
+  .discover-img img:hover{
+    transform: scale(110%);
+  }
+  .discover-img{
+    position: relative;
+    overflow: hidden;
+  }
+  .discover-img-mid{
+    position: relative;
+    overflow: hidden;
+  }
+  .discover-img-mid img{
+    width: 23.7rem;
+    transition: 0.5s ease;
+  }
+  .discover-img-mid img:hover{
+    transform: scale(110%);
+  }
+  .discover-img-container h2{
+    color: white;
+  }
+  .discover-img-container p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+  }
+  .img-text1{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .img-text2{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .img-text3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+/* ---------------------
+     Experience Section
+   --------------------- */
+  .experience-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .experience-header{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .experiences{
+    display: flex;
+    justify-content: space-between;
+    width: 36rem;
+  }
+  .experiences h2{
+    margin-bottom: 1rem;
+  }
+  .experiences p{
+    font-size: 1.4rem;
+  }
+  .ex-images{
+    display: flex;
+    margin-top: 7rem;
+  }
+  .ex-img1{
+    overflow: hidden;
+  }
+  .ex-img2{
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    margin-left: -10rem;
+    margin-top: 5rem;
+  }
+  .ex-img1 img{
+    width: 46.3rem;
+    transition: 0.5s ease;
+  }
+  .ex-img1 img:hover{
+    transform: scale(110%);
+  }
+  .ex-img2 img{
+    width: 22rem;
+
+    transition: 0.5s ease;
+  }
+  .ex-img2 img:hover{
+    transform: scale(110%);
+  }
+/* --------------------
+     Video Section
+  --------------------- */
+  .video-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .video-header{
+    margin-bottom: 3rem;
+  }
+  .video-container p{
+    margin-bottom: 4rem;
+  }
+  video {
+    width: 67.7rem
+  }
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .play-btn{
+    background: var(--primary-color);
+    padding: 1.4rem 2.8rem;
+    border-radius: 2px;
+    margin-top: -3rem;
+    margin-right: 2rem;
+    z-index: 5;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .play-btn:hover{
+    background: var(--secondary-color);
+  }
+  .fa-play{
+    color: white;
+    font-size: 1.6rem;
+  }
+/* --------------------
+     Responsiveness
+  --------------------- */
 .burger .fa-bars,
 .menu-check {
   display: none;
 }
 
-/* --------------------
-     Responsiveness
-  --------------------- */
 @media screen and (max-width: 1024px) {
   .card-container {
     position: absolute;
@@ -198,11 +404,70 @@ header {
     width: 1rem;
     height: 1rem;
   }
+  /* CTA Section */
+  .cta-img1{
+    width: 13rem;
+    height: 19.5rem;
+  }
+  .cta-img2{
+    width: 18rem;
+    height: 27rem;
+  }
+  /* Discover Section */
+  .discover-img img{
+    width: 18.2rem;
+  }
+  .discover-img-mid img{
+    width: 20rem;
+  }
+  .discover-img-container h2{
+    font-size: 2rem;
+  }
+  /* Experience Section */
+  .experience-header{
+    margin-bottom: 3rem;
+  }
+  .experiences{
+    width: 26rem;
+  }
+  .ex-img1 img{
+    width: 36.3rem;
+  }
+  .ex-img2 img{
+    width: 16rem;
+  }
+  /* Video Section */
+  video {
+    width: 58rem
+  }
 }
 @media screen and (max-width: 970px) {
   html {
     --header1: 4rem;
   }
+  /* CTA Section */
+  .cta-text h2{
+    font-size: 2rem;
+  }
+  .cta-text p{
+    font-size: 1.5rem;
+  }
+  /* Discover Section */
+  .discover-heading{
+    font-size: 2rem;
+  }
+  /* Experience Section */
+  .experience-header{
+    font-size: 2rem;
+  }
+  .experiences h2{
+    font-size: 2rem;
+  }
+  /* Video Section */
+  .video-header{
+    font-size: 2rem;
+  }
+
 }
 @media screen and (max-width: 766px) {
   /* Burger Menu */
@@ -250,8 +515,6 @@ header {
     color: white;
     display: block;
   }
-
-
   /* Other Sections */
   .hero-social-icons {
     flex-direction: column;
@@ -260,22 +523,87 @@ header {
   .hero-social-icons a:not(:last-child) img {
     margin-bottom: 2rem;
   }
+  /* CTA Section */
+  .cta-container{
+  flex-direction: column;
+  }
+  .cta-text{
+    text-align: center;
+    flex: 0;
+  }
+  .cta-img1{
+    width: 100%;
+  }
+  .cta-img2{
+    width: 100%;
+  }
+  /* Experience Section */
+  .experience-header{
+    margin-top: 28rem;
+  }
+    /* Video Section */
+    video {
+      width: 43.5rem;
+    }
 }
+@media screen and (max-width: 766px){
+  /* Discover Section */
+  .discover-img-container{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+  .discover-img-mid {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .discover-img{
+    max-width: 182px;
+  }
+  /* Experience Center */
+  .ex-img1 img{
+    width: 26.3rem;
+  }
+  .ex-img2 img{
+    width: 12rem;
+  }
+  /* Experience Center */
+  video {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .card-img {
     width: 8rem;
     height: 5.3rem;
   }
+  /* Discover Section */
+  .discover-img-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+  .discover-img-mid {
+    position: static;
+    transform: translateX(0);
+  }
+  /* Experience Section */
+  .experience-header{
+    margin-top: 0rem;
+  }
 }
 
-@keyframes slideicon{
+@keyframes slide-left{
   from {
-    transform: translateY(-70%);
+    transform: translateX(-50%);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateX(0%);
+    opacity: 0;
   }
 }
 
@@ -290,5 +618,7 @@ header {
     opacity: 1;
   }
 }
+
+
 
 
