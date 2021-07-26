@@ -376,6 +376,70 @@ header {
     font-size: 1.6rem;
   }
 /* --------------------
+     Place Section
+  --------------------- */
+  .place-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .place-header{
+    margin-bottom: 6rem;
+  }
+  .place-img img{
+    width: 17.5rem;
+  }
+  .place-img{
+    position: relative;
+  }
+  .subtitle{
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 1rem;
+  }
+  .price-tag{
+    font-size: 1.6rem;
+    color: white;
+  }
+  .place-content{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+  }
+  .place-ratings{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1rem; 
+    right: 1rem;
+    color: white;
+  }
+  .fa-star {
+    font-size: 1.2rem;
+  }
+  .place-ratings p{
+    font-size: 1.4rem;
+    color: white;
+  }
+  .place-btn{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+  }
+  .place-btn a{
+    background: var(--primary-color);
+    padding: 1.2rem 1.6rem;
+  }
+  .fa-arrow-right{
+    color: white;
+  }
+  .place-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+/* --------------------
      Responsiveness
   --------------------- */
 .burger .fa-bars,
@@ -440,6 +504,10 @@ header {
   video {
     width: 58rem
   }
+  /* Place Section */
+  .place-img img{
+    width: 15.3rem;
+  }
 }
 @media screen and (max-width: 970px) {
   html {
@@ -467,7 +535,10 @@ header {
   .video-header{
     font-size: 2rem;
   }
-
+  /* Place Section */
+  .place-header{
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 766px) {
   /* Burger Menu */
@@ -575,6 +646,12 @@ header {
   }
 }
 
+@media screen and (max-width: 567px){
+  .place-images{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media screen and (max-width: 340px) {
   .card-img {
     width: 8rem;
@@ -593,6 +670,10 @@ header {
   /* Experience Section */
   .experience-header{
     margin-top: 0rem;
+  }
+  /* Place Section */
+  .place-images{
+    grid-template-columns: repeat(1,1fr);
   }
 }
 
