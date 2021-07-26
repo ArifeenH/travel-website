@@ -13,6 +13,7 @@ html {
   --primary-color: #14505c;
   --secondary-color: #0e373f;
   --header-text: #11414B;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -114,6 +115,7 @@ header {
   padding: 1.6rem 3.2rem;
   background: var(--primary-color);
   transition: background 0.3s ease;
+  cursor: pointer;
 }
 .primary-button:hover {
   background: var(--secondary-color);
@@ -382,15 +384,21 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
   }
   .place-header{
     margin-bottom: 6rem;
   }
   .place-img img{
     width: 17.5rem;
+    transition: transform 0.1s ease-in-out;
+  }
+  .place-img img:hover{
+    transform: scale(110%);
   }
   .place-img{
     position: relative;
+    overflow: hidden;
   }
   .subtitle{
     font-size: 1.3rem;
@@ -429,6 +437,10 @@ header {
   .place-btn a{
     background: var(--primary-color);
     padding: 1.2rem 1.6rem;
+    transition: background 0.3s ease-in-out;
+  }
+  .place-btn a:hover{
+    background: var(--secondary-color);
   }
   .fa-arrow-right{
     color: white;
@@ -438,6 +450,128 @@ header {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
     row-gap: 4rem;
+  }
+  
+/* --------------------
+     Newsletter
+  --------------------- */
+  .newsletter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
+    text-align: center;
+    padding-bottom: 6rem;
+    margin-bottom: 10rem;
+  }
+  .newsletter-header{
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .newsletter-container p{
+    color: white;
+    padding-bottom: 4rem;
+  }
+  .subscribe-form{
+    display: flex;
+    max-width: 470px;
+    background: white;
+    text-align: left;
+    padding: 0.5rem;
+  }
+  .subscribe-input{
+    width: 70%;
+    border: 0;
+    padding: 0rem 1rem;
+  }
+  .subscribe-input:focus{
+    outline: none;
+  }
+/* --------------------
+     Sponsors Section
+  --------------------- */
+  .sponsors{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-items: center;
+    row-gap: 3.5rem;
+    margin-bottom: 15rem;
+  }
+  .sponsor-img{
+    width: 9rem;
+    filter: invert(0.7);
+  }
+/* --------------------
+     Footer Section
+  --------------------- */
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5rem;
+    margin-bottom: 8rem;
+  }
+  .footer-title{
+    color: var(--header-text);
+    margin-bottom: 1rem;
+  }
+  .footer-description{
+    margin-bottom: 2rem;
+    color: #44686F;
+  }
+  .social-icons a{
+    font-size: 1.8rem;
+    margin-right: 3rem;
+  }
+  .footer-item{
+    margin-bottom: 1rem;
+  }
+  .footer-link:hover{
+    color: var(--secondary-color);
+  }
+  .footer-link{
+    color: #44686F;
+    font-weight: 400;
+  }
+  /* Rights Section */
+  .copyright-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  .rights, .footer-terms, .footer-privacy{
+    font-size: 1.4rem;
+    color: #919EA1;
+    font-weight: 400;
+  }
+  .footer-terms{
+    margin-right: 2rem;
+  }
+  .footer-terms:hover{
+    color: var(--secondary-color);
+  }
+  .footer-privacy:hover{
+    color: var(--secondary-color);
+  }
+
+  /* Scroll Up Button */
+  #myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--primary-color);
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 15px; 
+    font-size: 15px; 
+  }
+  
+  #myBtn:hover {
+    background-color: var(--secondary-color);
   }
 /* --------------------
      Responsiveness
@@ -508,6 +642,11 @@ header {
   .place-img img{
     width: 15.3rem;
   }
+  /* Newsletter */
+  .newsletter-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 @media screen and (max-width: 970px) {
   html {
@@ -537,6 +676,10 @@ header {
   }
   /* Place Section */
   .place-header{
+    font-size: 2rem;
+  }
+  /* Newsletter */
+  .newsletter-header{
     font-size: 2rem;
   }
 }
@@ -643,6 +786,14 @@ header {
   /* Experience Center */
   video {
     width: 100%;
+  }
+  /* Last */
+  .copyright-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .rights{
+    margin-bottom: 2rem;
   }
 }
 

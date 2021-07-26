@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/962c219cef.js" crossorigin="anonymous"></script>
-
+    <!-- Javascript -->
 </head>
 <body>
     <!-- Header Section -->
@@ -27,10 +27,10 @@
             <div class="menu-links">
                 <input type="checkbox" class="menu-check">
                 <ul class="nav-links">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Discover">Discover</a></li>
-                    <li><a href="#Places">Places</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#places">Places</a></li>
                 </ul>
             </div>
             <div class="burger">
@@ -68,7 +68,8 @@
         </section>
     </header>
     <main>
-        <section class="cta-container centering">
+        <!-- CTA Section -->
+        <section class="cta-container centering" id="about">
             <div class="cta-text" data-aos="zoom-in">
                 <h2>More Information<br> About the Best Beaches</h2>
                 <p> You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.</p>
@@ -84,7 +85,7 @@
             </div>
         </section>
         <!-- Discover Section -->
-        <section class="discover-container centering">
+        <section class="discover-container centering" id="discover">
             <h2 class="discover-heading">Discover the Most<br> Attractive Places</h2>
             <div class="discover-img-container">
                 <div class="discover-img"> 
@@ -151,7 +152,7 @@
             </div>
         </section>
        <!-- Place Section -->
-       <section class="place-container centering">
+       <section class="place-container centering" id="places">
            <h2 class="place-header">Choose Your Place</h2>
            <div class="place-images">
                 <div class="place-img">
@@ -231,6 +232,76 @@
                 </div>
            </div>
        </section>
+       <!-- Newsletter -->
+       <section class="newsletter-container centering">
+           <h2 class="newsletter-header">Subscribe to<br> Our Newsletter!</h2>
+           <p>Subscribe to our newsletter and get a special 30% discount.</p>
+           <form class="subscribe-form">
+               <input class="subscribe-input" type="email" placeholder="Enter email">
+               <a class="primary-button">Subscribe</a>
+           </form>
+       </section>
     </main>
+    <footer>
+        <!-- Sponsors -->
+        <section class="sponsor-container centering">
+            <div class="sponsors">
+                <img src="assets/img/sponsors1.png" alt="" class="sponsor-img">
+                <img src="assets/img/sponsors2.png" alt="" class="sponsor-img">
+                <img src="assets/img/sponsors3.png" alt="" class="sponsor-img">
+                <img src="assets/img/sponsors4.png" alt="" class="sponsor-img">
+                <img src="assets/img/sponsors5.png" alt="" class="sponsor-img">
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <section class="footer-container centering">
+                <div class="travel">
+                <h3 class="footer-title">Travel</h3>
+                <p class="footer-description">It's your travel, you choose <br> the
+                    destination, we offer<br> you the
+                    experience</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">About</h3>
+                    <ul>
+                        <li class="footer-item"><a class="footer-link" href="#">About Us</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Features</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">News & Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Company</h3>
+                    <ul>
+                        <li class="footer-item"><a class="footer-link" href="#">Team</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Plan & Pricing</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Become a Member</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Support</h3>
+                    <ul>
+                        <li class="footer-item"><a class="footer-link" href="#">FAQs</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Support Center</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+        </section>
+        <!-- Copyright -->
+        <section class="copyright-container centering">
+                <p class="rights"> © 2021 Bedimcode. All rigths reserved. </p>
+                <div class="terms">
+                <a class="footer-terms" href="#">Terms & Agreements</a>
+                <a class="footer-privacy" href="#">Privacy Policy</a>
+                </div>
+        </section>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="button.js"></script>
 </body>
 </html>
